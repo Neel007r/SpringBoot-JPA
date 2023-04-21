@@ -3,7 +3,7 @@ package com.neel.entity;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 
-@Embeddable
+//@Embeddable
 public class Address {
 	
 	private String street;

@@ -6,6 +6,7 @@ public interface UserDetailsService {
 	
 	public UserDetails save(UserDetails theUserDetails);
 	
-	
+	public UserDetails getUserById(int id);
+
 
 }

@@ -18,4 +18,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 	}
 
+	@Override
+	public UserDetails getUserById(int id) {
+//		UserDetails user = userDetailsRepo.findUId(id);
+//		return user;
+		return userDetailsRepo.findById(id);
+	}
+
 }

@@ -1,5 +1,7 @@
 package com.neel.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +24,11 @@ public class UserDetailsRestController {
 	public UserDetails addDetails(@RequestBody UserDetails theUser) {
 		userDetailsService.save(theUser);
 		return theUser;
+	}
+	
+	@GetMapping("/details/{id}")
+	public UserDetails getOneUser(@PathVariable int id) {
+		return userDetailsService.getUserById(id);
 	}
 
 }

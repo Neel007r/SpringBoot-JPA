@@ -10,16 +10,31 @@ public class UserDetails {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int userId;
+	private int userId;
+	
 	private String firstName;
 	private String lastName;
 	private String email;
 	
-	private Address address;
+//	private Address address;
 	
 	
 	public UserDetails() {
 	}
+	
+	
+
+
+//	public UserDetails(int userId, String firstName, String lastName, String email, Address address) {
+//		super();
+//		this.userId = userId;
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//		this.email = email;
+//		this.address = address;
+//	}
+
+
 
 
 	public UserDetails(String firstName, String lastName, String email) {
@@ -69,14 +84,14 @@ public class UserDetails {
 	}
 
 
-	public Address getAddress() {
-		return address;
-	}
-
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
+//	public Address getAddress() {
+//		return address;
+//	}
+//
+//
+//	public void setAddress(Address address) {
+//		this.address = address;
+//	}
 	
 	
 	
